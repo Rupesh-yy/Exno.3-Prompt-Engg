@@ -1,48 +1,113 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
-### REGISTER NUMBER : 
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
+### DATE:15/5/2025                                                                           
+### REGISTER NUMBER : 212222060082
+### Aim:
+To prompt an AI assistant to generate different types of outputs that assist in the design, control, and deployment of a remote-controlled robot used for surveillance in hazardous environments (e.g., disaster zones, military, or industrial inspections).
 
-### Algorithm:  1. Direct Instruction Prompts
-Objective: Guide the chatbot to respond concisely to customer inquiries.
-Prompt Pattern:
-Prompt: "When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
-2. Contextual Prompting
-Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
-Prompt Pattern:
-Prompt: "If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
-3. Persona-Based Prompting
-Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
-Prompt Pattern:
-Prompt: "Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
-4. Few-Shot Prompting
-Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
-Prompt Pattern:
-Prompt: "Here are some examples of how to handle technical questions:
-'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
-'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
-Now, respond to: 'My app keeps crashing.'"
-5. Chain of Thought Prompting
-Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
-Prompt Pattern:
-Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
-Ask if they are using the laptop on a soft surface.
-Suggest moving the laptop to a flat, hard surface for better airflow.
-Ask if they’ve cleaned the vents recently.
-Recommend restarting the device to see if the issue persists.
-Now, solve: 'My laptop fan is making a loud noise.'"
-6. Instruction with Constraints
-Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
-Prompt Pattern:
-Prompt: "Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
-7. Reflective Prompting
-Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
-Prompt Pattern:
-Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
-Result: The various types of Prompts are executed successfully.
+### Procedure: 
+To design a remote-controlled robot, a structured approach using scenario-based prompting techniques is crucial. This procedure ensures the robot design addresses both technical functionality and user interaction requirements in different environments. The following steps use varied prompting strategies to guide the development process at each stage.
 
+## Project Overview
+##### Use Case:
+1.Development of a remote-controlled robot for surveillance operations in hazardous environments, including:
+Natural disaster zones (earthquakes, floods, fire)
+Military and conflict-prone areas
+Industrial inspection sites (chemical plants, nuclear facilities)  
 
+###### Purpose:
+To enhance human safety by enabling remote observation and data collection in areas too dangerous for direct human access.
 
+###### Core Functions:
 
-# Result: Thus the Prompts were exected succcessfully .
+1.Navigate rough and unpredictable terrain  
+2.Detect and avoid obstacles in real-time   
+3.Stream live video feed for surveillance   
+4.Be controlled remotely via a wireless interface   
+
+##### Key Components:
+
+1.Sensors: LiDAR, cameras, ultrasonic sensors for environmental sensing   
+2.Actuators: Motors and wheels for movement across different terrain types   
+3.Processing Unit: Microcontroller or single-board computer (e.g., Raspberry Pi) for local decision-making   
+4.Communication Module: Wireless system (Wi-Fi/Bluetooth/RF) for remote control and monitoring   
+
+###### Functional Features:
+
+1.Real-time feedback control for responsive navigation
+2.Integrated sensor fusion for accurate environmental mapping
+3.User interface for remote operation and monitoring
+4.Modular design for ease of upgrades and maintenance
+
+### Prompting Techniques for Each Stage of the Design Process Stage 
+
+1.User Scenario Prompting   
+Prompt:     
+"Describe a situation where a robot is deployed for surveillance in a disaster-hit building. What challenges would it face, and what capabilities should it have to assist rescue teams?"     
+Prompt Response:     
+The robot would need to navigate debris, detect heat signatures of survivors, and transmit live video. It must be compact, stable on uneven surfaces, and equipped with night vision or thermal imaging capabilities.   
+Prompt Goal:     
+To generate realistic use-case conditions and identify user expectations that shape the functional and physical design of the robot.     
+
+2.Functional Requirement Prompting  
+Prompt:  
+"List the functional requirements for a remote-controlled robot that will conduct surveillance in a chemical spill area."  
+Prompt Response:  
+The robot must Detect harmful gases,Avoid obstacles,Stream high-quality video,Be remotely maneuverable,Operate in low-visibility conditions.  
+Prompt Goal:  
+To clearly define the essential features and behaviors the robot must support to fulfill its mission safely and effectively.  
+
+3.Technical Scenario Prompting for Component Design  
+Prompt:  
+"Suggest suitable sensors for obstacle detection in a robot that operates in dark, dusty environments. Explain why they are appropriate."  
+Prompt Response:  
+LiDAR is effective for mapping terrain even in low light. Ultrasonic sensors are reliable in dusty environments. Infrared cameras can be used for thermal detection in dark conditions.  
+Prompt Goal:  
+To help identify and justify component choices based on environmental and operational constraints.  
+
+4.Interactivity Prompting  
+Prompt:  
+"What features should a control interface have for an operator using the robot in a high-stress emergency situation?"   
+Prompt Response:
+The interface should have Simple, intuitive controls ,Real-time video and telemetry feedback ,Emergency stop button,Map overlay for navigation feedback  
+Prompt Goal:   
+To design a user-friendly interface that minimizes error and supports effective remote operation under pressure.   
+
+5.Simulated Interaction Prompting
+Prompt:  
+"Simulate how the robot would react when it encounters a collapsed wall blocking its path. Describe its decision-making process."   
+Prompt Response:  
+The robot scans the environment using LiDAR. It detects the blockage and calculates an alternate route using its pathfinding algorithm. If no path is found, it sends an alert to the operator for manual control.   
+Prompt Goal:   
+To validate the robot's response logic and adaptability in uncertain conditions through virtual testing scenarios.   
+
+6.Scenario-Based Workflow Prompting    
+Prompt:  
+"Create a step-by-step workflow for the robot's operation from the moment it is deployed in a flooded warehouse."
+Prompt Response:  
+1. Operator initiates deployment.  
+2. Robot activates sensors and scans for safe paths.  
+3. Begins navigation while transmitting video feed.  
+Prompt Goal:  
+To ensure a well-structured operational flow that integrates sensing, navigation, communication, and decision-making.
+
+### Evaluation of Prompt Effectiveness in Design
+
+1.Improved Clarity in Requirements: Prompts helped define clear functional and technical requirements based on realistic user scenarios.  
+2.Faster Design Iteration: Structured prompting enabled rapid generation and refinement of design ideas without starting from scratch each time.  
+3.Enhanced Decision-Making: Prompt responses provided logical justifications for component selection and design choices.  
+4.Realistic Simulations: Scenario-based and simulated prompts revealed gaps in logic and allowed pre-deployment behavior testing.  
+5.User-Centric Development: Interactivity prompts ensured that the final system aligned with operator needs and stress conditions.  
+
+### Recommendations
+
+1.Integrate Prompting into Early Design Stages: Use scenario-based and functional prompts during the ideation phase to guide requirement gathering and system goals.  
+2.Use Simulated Prompts for Testing: Incorporate simulated interaction prompts regularly to validate robot behavior in unpredictable real-world conditions.  
+3.Maintain a Prompt Library: Build and reuse a set of tested prompts for common design and troubleshooting tasks to improve consistency and efficiency.  
+4.Encourage Human-AI Collaboration: Designers should iteratively refine AI-generated ideas to ensure contextual accuracy and operational feasibility.  
+
+### Conclusion
+The use of prompt engineering techniques significantly enhanced the design process of the remote-controlled surveillance robot. By simulating user scenarios, defining functional and technical requirements, and modeling system behavior, prompts acted as a creative and analytical aid throughout development. This approach not only accelerated problem-solving but also ensured a user-centric and technically sound solution suited for hazardous environments.
+
+# Result: 
+Thus the Prompts were exected succcessfully .
 
